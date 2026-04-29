@@ -20,7 +20,7 @@ public class WeakHashMaps {
         System.out.println(map1);
 
 
-        
+
 //working of the weak hash map 
         Object a = new String("K-1");
         Object b = new String("K-2");
@@ -34,13 +34,15 @@ public class WeakHashMaps {
             @Override
             public void run() {
                 try {
-                    Thread.sleep(8000);
+                    Thread.sleep(800);
                 } catch (Exception e) {
                    System.err.println(e);
                 }
                
             }
         };
+        Thread z = new Thread(runnable);
+        z.start();
         System.out.println(map1);
         
     }

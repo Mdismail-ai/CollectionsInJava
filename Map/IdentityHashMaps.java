@@ -6,7 +6,7 @@ public class IdentityHashMaps {
         //HashMap<Integer, String> map = new IdentityHashMap<Integer, String>();
 
         IdentityHashMap<Object, String> map1 = new IdentityHashMap<Object, String>();
-        Map<Object, String> map= new HashMap<Object, String>();
+        //Map<Object, String> map= new HashMap<Object, String>();
         // Not thread-safe
         // Order not maintained
         // Uses reference equality (==) for keys
