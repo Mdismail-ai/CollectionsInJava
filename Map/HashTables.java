@@ -2,15 +2,15 @@ package Map;
 
 import java.util.*;
 
-public class HashMaps {
+public class HashTables {
     public static void main(String[] args) {
-        Map<Integer , String> map = new HashMap<>();
-        // order not maintained 
-        // data stored in the  key- value 
-        // keys are uniq one only one null is allowed 
-        // valuse are duplicats 
+        Map<Integer , String> map = new Hashtable<>();
+    
+        // not key and valuse not aloes the null values 
+        // thread safe  
         map.put(1,"Ismail" );
-        map.put(null,"Ismail" );
+        //map.put(null,"Ismail" ); not alowed
+        //map.put(1,null ); not alloes
         map.put(2,"Noama" );
         map.put(3,"Adedh" );
         map.put(4,"Aman" );
@@ -19,11 +19,6 @@ public class HashMaps {
         map.remove(1);
         System.out.println(map);
         System.out.println(map.containsValue("Ismail"));
-        System.out.println(map.containsKey(null));
-
+        System.out.println(map.containsKey(5));
     }
 }
-
-
-
-
