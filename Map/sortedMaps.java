@@ -1,5 +1,6 @@
 package Map;
 
+import java.util.NavigableMap;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
@@ -7,6 +8,8 @@ public class sortedMaps {
     public static void main(String[] args) {
         
         SortedMap<Integer, String> map = new TreeMap<>();
+        // its an interface 
+        NavigableMap<Integer, String> map1 = new TreeMap<>();
         //nuls are not alloewd here 
         // sort automatically 
         //null valuse are allowed 
