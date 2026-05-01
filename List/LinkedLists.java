@@ -13,7 +13,7 @@ public class LinkedLists {
         System.out.println(list.isEmpty());
         System.out.println(list.lastIndexOf(3));
         // slow acessesing 
-        // fast insertion and deleation 
+         // fast insertion and deleation 
 
     }
 }
